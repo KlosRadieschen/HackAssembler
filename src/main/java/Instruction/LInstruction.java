@@ -12,12 +12,4 @@ public final class LInstruction extends Instruction {
     public void process(SymbolTable table) {
         table.add(label, address);
     }
-
-    public String getLabel() {
-        return label;
-    }
-
-    public int getAddress() {
-        return address;
-    }
 }

@@ -40,30 +40,6 @@ public final class CInstruction extends Instruction {
         }
     }
 
-    public Value getComp() {
-        return comp;
-    }
-
-    public Value getDest() {
-        return dest;
-    }
-
-    public Value getJump() {
-        return jump;
-    }
-
-    public void setComp(Value com) {
-        comp = com;
-    }
-
-    public void setDest(Value des) {
-        dest = des;
-    }
-
-    public void setJump(Value jum) {
-        jump = jum;
-    }
-
     @Override
     public String toString() {
         if (comp instanceof ProcessedValue(int c) && dest instanceof ProcessedValue(int d) && jump instanceof ProcessedValue(int j)) {

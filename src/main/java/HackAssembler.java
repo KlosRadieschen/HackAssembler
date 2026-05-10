@@ -22,6 +22,6 @@ public class HackAssembler {
     }
 
     public static void writeToFile(Path path, String[] lines) throws IOException {
-        Path path1 = Files.write(path, Arrays.asList(lines));
+        Files.write(path, Arrays.asList(lines));
     }
 }

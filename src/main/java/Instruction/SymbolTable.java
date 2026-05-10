@@ -3,7 +3,7 @@ package Instruction;
 import java.util.HashMap;
 
 public class SymbolTable {
-    private final HashMap<String, Integer> table = new HashMap<String, Integer>();
+    private final HashMap<String, Integer> table = new HashMap<>();
 
     public SymbolTable() {
         table.put("R0", 0);
@@ -31,10 +31,6 @@ public class SymbolTable {
         table.put("ARG", 2);
         table.put("THIS", 3);
         table.put("THAT", 4);
-    }
-
-    public HashMap<String, Integer> getTable() {
-        return table;
     }
 
     public void add(String symbol, int address) {
