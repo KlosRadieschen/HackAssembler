@@ -17,7 +17,7 @@ public class HackAssembler {
         return Files.readAllLines(Paths.get(filePath))
                 .stream()
                 .map(String::trim)
-                .filter(line -> !line.startsWith("//") || line.isBlank())
+                .filter(line -> !line.startsWith("//") && !line.isBlank())
                 .toArray(String[]::new);
     }
 
